@@ -1,0 +1,145 @@
+.card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin: 2rem;
+}
+
+/* Header do card */
+.card-header {
+    margin-bottom: 2.5rem;
+}
+
+/* Título principal */
+.card-header h1 {
+    color: #1e293b;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Container de busca */
+.search-wrapper {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+}
+
+/* Input de busca */
+.search-wrapper input {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.search-wrapper input:focus {
+    outline: none;
+    border-color: #2196F3;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
+}
+
+/* Ícone de busca */
+.search-wrapper i {
+    position: absolute;
+    right: 1.2rem;
+    top: 54%;
+    transform: translateY(-50%);
+    color: #64748b;
+}
+
+/* Estilização da tabela */
+.p-datatable {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Cabeçalho da tabela */
+.p-datatable .p-datatable-thead > tr > th {
+    background: #f8fafc;
+    padding: 1.2rem 1rem;
+    border: none;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Células da tabela */
+.p-datatable .p-datatable-tbody > tr > td {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Espaçamento entre colunas */
+.p-datatable .p-datatable-thead > tr > th,
+.p-datatable .p-datatable-tbody > tr > td {
+    padding-left: 1cm !important;
+    padding-right: 1cm !important;
+}
+
+/* Ajuste específico para a primeira coluna */
+.p-datatable .p-datatable-thead > tr > th:first-child,
+.p-datatable .p-datatable-tbody > tr > td:first-child {
+    padding-left: 1.5cm !important;
+}
+
+/* Ajuste específico para a última coluna */
+.p-datatable .p-datatable-thead > tr > th:last-child,
+.p-datatable .p-datatable-tbody > tr > td:last-child {
+    padding-right: 1.5cm !important;
+}
+
+/* Hover nas linhas */
+.p-datatable .p-datatable-tbody > tr:hover {
+    background: #f8fafc;
+}
+
+/* Última linha da tabela */
+.p-datatable .p-datatable-tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+/* Paginação */
+.p-datatable .p-paginator {
+    padding: 1rem;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Botões de ação */
+.p-button.p-button-rounded {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.p-button.p-button-rounded:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensagem de tabela vazia */
+.p-datatable .p-datatable-tbody > tr.p-datatable-emptymessage > td {
+    padding: 2rem;
+    text-align: center;
+    color: #64748b;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .card-header h1 {
+        font-size: 1.8rem;
+    }
+} 
