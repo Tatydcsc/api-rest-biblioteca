@@ -4,7 +4,7 @@ API REST para gerenciamento de uma biblioteca, desenvolvida com Node.js, Express
 -  Listar todos os livros
 -  Buscar livros por título, autor, ano, número de páginas ou preço
 -  Adicionar novos livros
-- ✏ Atualizar livros por ID
+-  Atualizar livros por ID
 -  Remover livros por ID
 
 ### Tecnologias usadas:
