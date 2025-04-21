@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 async function conectarBanco() {
     try {
         console.log('Tentando conectar ao MongoDB...');
-        mongoose.connect("mongodb://localhost:27017/Biblioteca");  
+        mongoose.connect(process.env.MONGO_URL);
         console.log('Conexão estabelecida com sucesso');
         return mongoose.connection;
     } catch (erro) {
